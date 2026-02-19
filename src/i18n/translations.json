@@ -1,0 +1,170 @@
+{
+  "it": {
+    "translation": {
+      "home": {
+        "welcome": "Grazie per condividere con noi questo giorno speciale!"
+      },
+      "cerimonia": {
+        "title": "Cerimonia",
+        "description": "La cerimonia si terrà alle 15:00 presso la Chiesa di San Pio da Pietralcina, Castel del Piano, Perugia.",
+        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia"
+      },
+      "ricevimento": {
+        "title": "Ricevimento",
+        "description": "Il ricevimento avrà inizio alle 17:00 presso Villa Bellissima, Perugia.",
+        "address": "Via Roma 123, Perugia"
+      },
+      "pernottamento": {
+        "title": "Pernottamento",
+        "description": "Coming Soon… Stiamo preparando tutte le informazioni sugli hotel."
+      },
+      "canti": {
+        "title": "Canti",
+        "description": "Coming Soon… Presto condivideremo i brani e le musiche."
+      },
+      "listaNozze": {
+        "title": "Lista Nozze",
+        "description": "Il vostro affetto è il regalo più grande, ma se desiderate contribuire al nostro viaggio:",
+        "iban": "IBAN: IT00X0000000000000000000000"
+      },
+      "rsvp": {
+        "title": "RSVP",
+        "description": "Conferma la tua presenza compilando il form qui sotto:",
+        "button": "Conferma presenza",
+        "link": "https://forms.gle/TUOLINK"
+      },
+      "menu": {
+        "home": "Home",
+        "informazioni": "Informazioni",
+        "cerimonia": "Cerimonia",
+        "ricevimento": "Ricevimento",
+        "pernottamento": "Pernottamento",
+        "canti": "Canti",
+        "listaNozze": "Lista Nozze",
+        "rsvp": "RSVP",
+        "lingua": "Lingua"
+      },
+      "countdown": {
+        "days": "giorni",
+        "hours": "ore",
+        "minutes": "minuti"
+      },
+      "hero": {
+        "title": "Elisa & Paolo",
+        "date": "22 Agosto 2026 · Perugia"
+      }
+    }
+  },
+  "en": {
+    "translation": {
+      "home": {
+        "welcome": "Thank you for sharing this special day with us!"
+      },
+      "cerimonia": {
+        "title": "Ceremony",
+        "description": "The ceremony will be at 3:00 PM at the Church of San Pio da Pietralcina, Castel del Piano, Perugia.",
+        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia"
+      },
+      "ricevimento": {
+        "title": "Reception",
+        "description": "The reception starts at 5:00 PM at Villa Bellissima, Perugia.",
+        "address": "Via Roma 123, Perugia"
+      },
+      "pernottamento": {
+        "title": "Accommodation",
+        "description": "Coming Soon… We are preparing hotel info nearby."
+      },
+      "canti": {
+        "title": "Songs",
+        "description": "Coming Soon… We will share the songs for the ceremony and reception."
+      },
+      "listaNozze": {
+        "title": "Gift List",
+        "description": "Your affection is the greatest gift, but if you want to contribute to our trip:",
+        "iban": "IBAN: IT00X0000000000000000000000"
+      },
+      "rsvp": {
+        "title": "RSVP",
+        "description": "Confirm your attendance by filling the form below:",
+        "button": "Confirm Attendance",
+        "link": "https://forms.gle/TUOLINK"
+      },
+      "menu": {
+        "home": "Home",
+        "informazioni": "Information",
+        "cerimonia": "Ceremony",
+        "ricevimento": "Reception",
+        "pernottamento": "Accommodation",
+        "canti": "Songs",
+        "listaNozze": "Gift List",
+        "rsvp": "RSVP",
+        "lingua": "Language"
+      },
+      "countdown": {
+        "days": "days",
+        "hours": "hours",
+        "minutes": "minutes"
+      },
+      "hero": {
+        "title": "Elisa & Paolo",
+        "date": "August 22, 2026 · Perugia"
+      }
+    }
+  },
+  "de": {
+    "translation": {
+      "home": {
+        "welcome": "Danke, dass Sie diesen besonderen Tag mit uns teilen!"
+      },
+      "cerimonia": {
+        "title": "Zeremonie",
+        "description": "Die Zeremonie findet um 15:00 Uhr in der Kirche San Pio da Pietralcina, Castel del Piano, Perugia, statt.",
+        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia"
+      },
+      "ricevimento": {
+        "title": "Empfang",
+        "description": "Der Empfang beginnt um 17:00 Uhr in Villa Bellissima, Perugia.",
+        "address": "Via Roma 123, Perugia"
+      },
+      "pernottamento": {
+        "title": "Unterkunft",
+        "description": "Coming Soon… Wir bereiten Hotelinformationen in der Nähe vor."
+      },
+      "canti": {
+        "title": "Lieder",
+        "description": "Coming Soon… Bald teilen wir die Lieder für Zeremonie und Empfang."
+      },
+      "listaNozze": {
+        "title": "Geschenkliste",
+        "description": "Ihre Zuneigung ist das größte Geschenk, aber wenn Sie zu unserer Reise beitragen möchten:",
+        "iban": "IBAN: IT00X0000000000000000000000"
+      },
+      "rsvp": {
+        "title": "RSVP",
+        "description": "Bestätigen Sie Ihre Teilnahme, indem Sie das Formular unten ausfüllen:",
+        "button": "Teilnahme bestätigen",
+        "link": "https://forms.gle/TUOLINK"
+      },
+      "menu": {
+        "home": "Startseite",
+        "informazioni": "Informationen",
+        "cerimonia": "Zeremonie",
+        "ricevimento": "Empfang",
+        "pernottamento": "Unterkunft",
+        "canti": "Lieder",
+        "listaNozze": "Geschenkliste",
+        "rsvp": "RSVP",
+        "lingua": "Sprache"
+      },
+      "countdown": {
+        "days": "Tage",
+        "hours": "Stunden",
+        "minutes": "Minuten"
+      },
+      "hero": {
+        "title": "Elisa & Paolo",
+        "date": "22. August 2026 · Perugia"
+      }
+    }
+  }
+}
