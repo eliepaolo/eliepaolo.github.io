@@ -1,15 +1,20 @@
 import React, { useEffect, useState } from "react";
 import "../style.css";
-import coverImage from "../assets/cover.jpg";
 
 function ComingSoon() {
-  const weddingDate = new Date("2026-08-22T15:00:00").getTime();
-  const [timeLeft, setTimeLeft] = useState({});
+  const weddingDate = new Date("2026-08-22T11:00:00").getTime();
+  const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
 
   useEffect(() => {
     const interval = setInterval(() => {
       const now = new Date().getTime();
       const difference = weddingDate - now;
+
+      if (difference <= 0) {
+        setTimeLeft({ days: 0, hours: 0, minutes: 0 });
+        clearInterval(interval);
+        return;
+      }
 
       setTimeLeft({
         days: Math.floor(difference / (1000 * 60 * 60 * 24)),
@@ -19,10 +24,13 @@ function ComingSoon() {
     }, 1000);
 
     return () => clearInterval(interval);
-  }, []);
+  }, [weddingDate]);
 
   return (
-    <div className="coming-container" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${coverImage})` }}>
+    <div  className="coming-container"  style={{
+    "--bg-desktop": `url(${process.env.PUBLIC_URL}/images/cover.jpg)`,
+    "--bg-mobile": `url(${process.env.PUBLIC_URL}/images/cover_mobile.jpg)`,
+    }}>
       <div className="overlay">
         <h1>Elisa & Paolo</h1>
         <div className="divider"></div>

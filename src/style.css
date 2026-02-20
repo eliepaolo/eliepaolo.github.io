@@ -1,76 +1,187 @@
-.coming-container {
-  height: 100vh;
-  width: 100%;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: contain; /* immagine intera */
-  display: flex;
-  justify-content: center; /* centro orizzontale */
-  position: relative; /* necessario per l'assoluto */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Inter:wght@300;400;500;600&display=swap');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
 }
+
+body {
+  overflow-y: hidden;
+}
+
+/* =============================
+   Base Layout – Cinematic
+============================= */
+
+.coming-container {
+  min-height: 100vh;
+  min-height: 100svh;
+  width: 100%;
+  background-image: var(--bg-desktop);
+  background-position: center 55%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 0 0rem;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* darker cinematic gradient */
+.coming-container::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(28,22,18,0.25) 0%,
+    rgba(28,22,18,0.65) 100%
+  );
+  z-index: 1;
+}
+
+/* =============================
+   Overlay Card – Luxury
+============================= */
 
 .overlay {
-  position: absolute;
-  top: 25%; /* regola questa percentuale fino a non coprire le facce */
-  left: 50%;
-  transform: translateX(-50%); /* centra orizzontalmente */
-  background: rgba(255, 255, 255, 0.05);
-  backdrop-filter: blur(10px);
-  padding: 4rem 5rem;
+  position: relative;
+  z-index: 2;
+  width: fit-content;
+  max-width: 520px;
+  padding: 1.4rem 2rem;
   text-align: center;
-  max-width: 700px;
-  box-shadow: 0 30px 80px rgba(0,0,0,0.25);
+  background: rgba(255, 252, 246, 0.82);
+  backdrop-filter: blur(22px) saturate(160%);
+  -webkit-backdrop-filter: blur(22px) saturate(160%);
+  border-radius: 26px;
+  border: 1px solid rgba(190,170,150,0.3);
+  box-shadow:
+    0 40px 120px rgba(0,0,0,0.35),
+    0 12px 35px rgba(0,0,0,0.2);
+  animation: fadeUp 1.2s ease forwards;
+  transition: all 0.4s ease;
 }
 
+.overlay:hover {
+  transform: translateY(-4px);
+  box-shadow:
+    0 50px 140px rgba(0,0,0,0.4),
+    0 18px 40px rgba(0,0,0,0.25);
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* =============================
+   Typography
+============================= */
+
 .overlay h1 {
-  font-size: 3.5rem;
-  font-weight: 400;
-  letter-spacing: 4px;
-  color: #1f1f1f;
+  font-family: 'Playfair Display', serif;
+  font-size: 3.1rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  margin: 0;
+  color: #1a1613;
+  text-shadow: 0 2px 14px rgba(0,0,0,0.08);
 }
 
 .date {
-  font-size: 1rem;
-  letter-spacing: 2px;
-  margin-top: 1rem;
-  text-transform: uppercase;
-  color: #444;
-}
-
-.countdown {
-  margin-top: 2rem;
-  font-size: 1.3rem;
-  letter-spacing: 2px;
-  color: #1f1f1f;
-}
-
-.coming-text {
-  margin-top: 2rem;
+  font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
-  letter-spacing: 3px;
+  letter-spacing: 4px;
+  margin-top: 0.9rem;
   text-transform: uppercase;
-  color: #777;
+  color: #6d5c4f;
 }
 
 .divider {
-  width: 60px;
-  height: 2px;
-  background: #1f1f1f;
-  margin: 2rem auto;
-  opacity: 0.3;
+  width: 90px;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #c6b29e, transparent);
+  margin: 1.4rem auto;
+  opacity: 0.9;
 }
 
+/* =============================
+   Countdown – Editorial Blocks
+============================= */
+
+.countdown {
+  margin-top: 1.2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.countdown span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: fadeUp 1.4s ease forwards;
+}
+
+.countdown strong {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #1a1613;
+}
+
+.countdown small {
+  font-size: 0.7rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #7a6a5f;
+  margin-top: 0.3rem;
+}
+
+/* =============================
+   Mobile Premium Layout
+============================= */
+
 @media (max-width: 768px) {
+  .coming-container {
+    background-image: var(--bg-mobile);
+    background-position: center 18%;
+    align-items: flex-end;
+    padding: 0 0 calc(3.2rem + env(safe-area-inset-bottom));
+  }
+
   .overlay {
-    padding: 2.5rem 2rem;
-    width: 90%;
+    width: fit-content;
+    max-width: 85%;
+    padding: 1.1rem 1rem;
+    border-radius: 22px;
+    margin: 0 auto 0.8rem;
   }
 
   .overlay h1 {
-    font-size: 2.2rem;
+    font-size: clamp(2rem, 8vw, 2.6rem);
   }
 
   .countdown {
-    font-size: 1rem;
+    gap: 1.2rem;
+  }
+
+  .countdown strong {
+    font-size: 1.6rem;
+  }
+
+  .divider {
+    margin: 1.8rem auto;
+  }
+
+  .date {
+    font-size: 0.75rem;
+    letter-spacing: 3px;
   }
 }
+
