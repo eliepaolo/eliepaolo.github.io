@@ -19,6 +19,7 @@ function Cerimonia() {
         style={{ border: 0, marginTop: '20px' }}
         allowFullScreen=""
         loading="lazy"
+        title={t('cerimonia.mappa')}
       ></iframe>
     </section>
   );

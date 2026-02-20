@@ -7,12 +7,14 @@
       "cerimonia": {
         "title": "Cerimonia",
         "description": "La cerimonia si terrà alle 15:00 presso la Chiesa di San Pio da Pietralcina, Castel del Piano, Perugia.",
-        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia"
+        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia",
+        "mappa": "Google Maps"
       },
       "ricevimento": {
         "title": "Ricevimento",
         "description": "Il ricevimento avrà inizio alle 17:00 presso Villa Bellissima, Perugia.",
-        "address": "Via Roma 123, Perugia"
+        "address": "Via Roma 123, Perugia",
+        "mappa": "Google Maps"
       },
       "pernottamento": {
         "title": "Pernottamento",
@@ -63,12 +65,14 @@
       "cerimonia": {
         "title": "Ceremony",
         "description": "The ceremony will be at 3:00 PM at the Church of San Pio da Pietralcina, Castel del Piano, Perugia.",
-        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia"
+        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia",
+        "mappa": "Google Maps"
       },
       "ricevimento": {
         "title": "Reception",
         "description": "The reception starts at 5:00 PM at Villa Bellissima, Perugia.",
-        "address": "Via Roma 123, Perugia"
+        "address": "Via Roma 123, Perugia",
+        "mappa": "Google Maps"
       },
       "pernottamento": {
         "title": "Accommodation",
@@ -119,12 +123,14 @@
       "cerimonia": {
         "title": "Zeremonie",
         "description": "Die Zeremonie findet um 15:00 Uhr in der Kirche San Pio da Pietralcina, Castel del Piano, Perugia, statt.",
-        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia"
+        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia",
+        "mappa": "Google Maps"
       },
       "ricevimento": {
         "title": "Empfang",
         "description": "Der Empfang beginnt um 17:00 Uhr in Villa Bellissima, Perugia.",
-        "address": "Via Roma 123, Perugia"
+        "address": "Via Roma 123, Perugia",
+        "mappa": "Google Maps"
       },
       "pernottamento": {
         "title": "Unterkunft",

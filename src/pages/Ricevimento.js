@@ -19,6 +19,7 @@ function Ricevimento() {
         style={{ border: 0, marginTop: '20px' }}
         allowFullScreen=""
         loading="lazy"
+        title={t('ricevimento.mappa')}
       ></iframe>
     </section>
   );
