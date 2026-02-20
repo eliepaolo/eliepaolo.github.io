@@ -7,7 +7,7 @@ function Countdown() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const weddingDate = new Date("August 22, 2026 15:00:00").getTime();
+      const weddingDate = new Date("August 22, 2026 11:00:00").getTime();
       const now = new Date().getTime();
       const distance = weddingDate - now;
 
