@@ -455,3 +455,22 @@ footer {
     height: 70vh;
   }
 }
+
+.enter-link {
+  display: inline-block;
+  margin-top: 3rem;
+  padding: 0.7rem 1.6rem;
+  border: 1px solid #fff;
+  border-radius: 40px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.enter-link:hover {
+  background: #fff;
+  color: #000;
+}
