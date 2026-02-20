@@ -15,7 +15,7 @@ function Header() {
             <li><Link to="/">{t('menu.home')}</Link></li>
 
             <li className="dropdown">
-              <span>{t('menu.informazioni')} ▾</span>
+              <span>{t('menu.informazioni')}</span>
               <ul className="dropdown-menu">
                 <li><Link to="/cerimonia">{t('menu.cerimonia')}</Link></li>
                 <li><Link to="/ricevimento">{t('menu.ricevimento')}</Link></li>
@@ -28,17 +28,38 @@ function Header() {
             <li><Link to="/rsvp" className="rsvp-btn">{t('menu.rsvp')}</Link></li>
           </ul>
 
-          <div className="language-switcher">
-            <button onClick={() => i18n.changeLanguage('it')} className={i18n.language === 'it' ? 'active' : ''}>
-              🇮🇹
-            </button>
-            <button onClick={() => i18n.changeLanguage('en')} className={i18n.language === 'en' ? 'active' : ''}>
-              🇬🇧
-            </button>
-            <button onClick={() => i18n.changeLanguage('de')} className={i18n.language === 'de' ? 'active' : ''}>
-              🇩🇪
-            </button>
+        <li className="language-dropdown">
+          <div className="lang-current">
+            <span className={`fi fi-${i18n.language === 'en' ? 'gb' : i18n.language}`}></span>
+            <span>{i18n.language.toUpperCase()}</span>
           </div>
+
+          <ul className="lang-menu">
+            <li
+              className={i18n.language === 'it' ? 'active' : ''}
+              onClick={() => i18n.changeLanguage('it')}
+            >
+              <span className="fi fi-it"></span>
+              Italiano
+            </li>
+
+            <li
+              className={i18n.language === 'en' ? 'active' : ''}
+              onClick={() => i18n.changeLanguage('en')}
+            >
+              <span className="fi fi-gb"></span>
+              English
+            </li>
+
+            <li
+              className={i18n.language === 'de' ? 'active' : ''}
+              onClick={() => i18n.changeLanguage('de')}
+            >
+              <span className="fi fi-de"></span>
+              Deutsch
+            </li>
+          </ul>
+        </li>
         </nav>
       </div>
     </header>

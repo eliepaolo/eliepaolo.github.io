@@ -6,15 +6,17 @@
       },
       "cerimonia": {
         "title": "Cerimonia",
-        "description": "La cerimonia si terrà alle 15:00 presso la Chiesa di San Pio da Pietralcina, Castel del Piano, Perugia.",
-        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia",
-        "mappa": "Google Maps"
+        "description": "La cerimonia si terrà alle $t(config:ceremonyTime) presso $t(config:ceremonyPlace), $t(config:location).",
+        "address": "$t(config:ceremonyAddress)",
+        "mappa": "Portami qui ->",
+        "link": "$t(config:ceremonyLink)"
       },
       "ricevimento": {
         "title": "Ricevimento",
-        "description": "Il ricevimento avrà inizio alle 17:00 presso Villa Bellissima, Perugia.",
-        "address": "Via Roma 123, Perugia",
-        "mappa": "Google Maps"
+        "description": "Il ricevimento avrà inizio alle $t(config:receptionTime) presso $t(config:receptionPlace), $t(config:location).",
+        "address": "$t(config:receptionAddress)",
+        "mappa": "Portami qui ->",
+        "link": "$t(config:receptionLink)"
       },
       "pernottamento": {
         "title": "Pernottamento",
@@ -27,13 +29,13 @@
       "listaNozze": {
         "title": "Lista Nozze",
         "description": "Il vostro affetto è il regalo più grande, ma se desiderate contribuire al nostro viaggio:",
-        "iban": "IBAN: IT00X0000000000000000000000"
+        "iban": "$t(config:iban)"
       },
       "rsvp": {
         "title": "RSVP",
         "description": "Conferma la tua presenza compilando il form qui sotto:",
         "button": "Conferma presenza",
-        "link": "https://forms.gle/TUOLINK"
+        "link": "$t(config:formLink)"
       },
       "menu": {
         "home": "Home",
@@ -52,8 +54,8 @@
         "minutes": "minuti"
       },
       "hero": {
-        "title": "Elisa & Paolo",
-        "date": "22 Agosto 2026 · Perugia"
+        "title": "$t(config:names)",
+        "date": "$t(config:date) · $t(config:location)"
       }
     }
   },
@@ -64,15 +66,17 @@
       },
       "cerimonia": {
         "title": "Ceremony",
-        "description": "The ceremony will be at 3:00 PM at the Church of San Pio da Pietralcina, Castel del Piano, Perugia.",
-        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia",
-        "mappa": "Google Maps"
+        "description": "The ceremony will be at $t(config:ceremonyTime) at $t(config:ceremonyPlace), $t(config:location).",
+        "address": "$t(config:ceremonyAddress)",
+        "mappa": "Take me there ->",
+        "link": "$t(config:ceremonyLink)"
       },
       "ricevimento": {
         "title": "Reception",
-        "description": "The reception starts at 5:00 PM at Villa Bellissima, Perugia.",
-        "address": "Via Roma 123, Perugia",
-        "mappa": "Google Maps"
+        "description": "The reception starts at $t(config:receptionTime) at $t(config:receptionPlace), $t(config:location).",
+        "address": "$t(config:receptionAddress)",
+        "mappa": "Take me there ->",
+        "link": "$t(config:receptionLink)"
       },
       "pernottamento": {
         "title": "Accommodation",
@@ -85,13 +89,13 @@
       "listaNozze": {
         "title": "Gift List",
         "description": "Your affection is the greatest gift, but if you want to contribute to our trip:",
-        "iban": "IBAN: IT00X0000000000000000000000"
+        "iban": "$t(config:iban)"
       },
       "rsvp": {
         "title": "RSVP",
         "description": "Confirm your attendance by filling the form below:",
         "button": "Confirm Attendance",
-        "link": "https://forms.gle/TUOLINK"
+        "link": "$t(config:formLink)"
       },
       "menu": {
         "home": "Home",
@@ -110,8 +114,8 @@
         "minutes": "minutes"
       },
       "hero": {
-        "title": "Elisa & Paolo",
-        "date": "August 22, 2026 · Perugia"
+        "title": "$t(config:names)",
+        "date": "$t(config:dateEn) · $t(config:location)"
       }
     }
   },
@@ -122,15 +126,17 @@
       },
       "cerimonia": {
         "title": "Zeremonie",
-        "description": "Die Zeremonie findet um 15:00 Uhr in der Kirche San Pio da Pietralcina, Castel del Piano, Perugia, statt.",
-        "address": "Via San Pio da Pietralcina, Castel del Piano 12, Perugia",
-        "mappa": "Google Maps"
+        "description": "Die Zeremonie findet um $t(config:ceremonyTime) Uhr bei $t(config:ceremonyPlace), $t(config:location) statt.",
+        "address": "$t(config:ceremonyAddress)",
+        "mappa": "Bring mich hin ->",
+        "link": "$t(config:ceremonyLink)"
       },
       "ricevimento": {
         "title": "Empfang",
-        "description": "Der Empfang beginnt um 17:00 Uhr in Villa Bellissima, Perugia.",
-        "address": "Via Roma 123, Perugia",
-        "mappa": "Google Maps"
+        "description": "Der Empfang beginnt um $t(config:receptionTime) Uhr bei $t(config:receptionPlace), $t(config:location).",
+        "address": "$t(config:receptionAddress)",
+        "mappa": "Bring mich hin ->",
+        "link": "$t(config:receptionLink)"
       },
       "pernottamento": {
         "title": "Unterkunft",
@@ -143,13 +149,13 @@
       "listaNozze": {
         "title": "Geschenkliste",
         "description": "Ihre Zuneigung ist das größte Geschenk, aber wenn Sie zu unserer Reise beitragen möchten:",
-        "iban": "IBAN: IT00X0000000000000000000000"
+        "iban": "$t(config:iban)"
       },
       "rsvp": {
         "title": "RSVP",
         "description": "Bestätigen Sie Ihre Teilnahme, indem Sie das Formular unten ausfüllen:",
         "button": "Teilnahme bestätigen",
-        "link": "https://forms.gle/TUOLINK"
+        "link": "$t(config:formLink)"
       },
       "menu": {
         "home": "Startseite",
@@ -168,8 +174,8 @@
         "minutes": "Minuten"
       },
       "hero": {
-        "title": "Elisa & Paolo",
-        "date": "22. August 2026 · Perugia"
+        "title": "$t(config:names)",
+        "date": "$t(config:dateDe) · $t(config:location)"
       }
     }
   }

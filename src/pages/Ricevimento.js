@@ -7,20 +7,25 @@ function Ricevimento() {
   return (
     <section className="fade">
       <h2>{t('ricevimento.title')}</h2>
-      <div className="divider"></div>
       <p>{t('ricevimento.description')}</p>
-      <h3>Indirizzo</h3>
-      <p>{t('ricevimento.address')}</p>
 
       <iframe
-        src="https://www.google.com/maps?q=Villa+Bellissima,Perugia&output=embed"
+        src={t('config:receptionEmbed')}
         width="100%"
-        height="300"
-        style={{ border: 0, marginTop: '20px' }}
-        allowFullScreen=""
+        height="350"
+        style={{ border: 0, borderRadius: '22px' }}
         loading="lazy"
-        title={t('ricevimento.mappa')}
-      ></iframe>
+        referrerPolicy="no-referrer-when-downgrade"
+        title="Mappa Cerimonia"
+      />
+      <a
+        href={t('config:locationLink')}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="maps-btn"
+      >
+        {t('ricevimento.mappa')}
+      </a>
     </section>
   );
 }
