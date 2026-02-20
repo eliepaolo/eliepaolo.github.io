@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../style.css";
+import coverImage from "../assets/cover.jpg";
 
 function ComingSoon() {
   const weddingDate = new Date("2026-08-22T15:00:00").getTime();
@@ -21,19 +22,16 @@ function ComingSoon() {
   }, []);
 
   return (
-    <div className="coming-container">
+    <div className="coming-container" style={{ backgroundImage: `linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url(${coverImage})` }}>
       <div className="overlay">
         <h1>Elisa & Paolo</h1>
         <div className="divider"></div>
-        <p className="date">22 Agosto 2026 · Perugia</p>
+        <p className="date">22.08.2026 · Perugia</p>
 
         <div className="countdown">
           {timeLeft.days} giorni · {timeLeft.hours} ore · {timeLeft.minutes} minuti
         </div>
 
-        <a href="/info" className="enter-link">
-          Scopri di più
-        </a>
       </div>
     </div>
   );
