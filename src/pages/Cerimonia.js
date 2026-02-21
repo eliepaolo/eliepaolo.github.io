@@ -5,10 +5,21 @@ function Cerimonia() {
   const { t } = useTranslation(['translation', 'config']);
 
   return (
-    <div className="fade">
+    <section className="section-light">
+      <div className="fade">
       <h2>{t('cerimonia.title')}</h2>
+      <div className="divider"></div>
       <p>{t('cerimonia.description')}</p>
 
+      {/* BOTTONE APRI MAPS */}
+      <a
+        href={t('config:ceremonyLink')}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="maps-btn"
+      >
+        {t('cerimonia.mappa')}
+      </a>
       {/* MAPPA EMBED */}
       <div className="map-container">
         <iframe
@@ -22,17 +33,8 @@ function Cerimonia() {
           title="Mappa Cerimonia"
         ></iframe>
       </div>
-
-      {/* BOTTONE APRI MAPS */}
-      <a
-        href={t('config:ceremonyLink')}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="maps-btn"
-      >
-        {t('cerimonia.mappa')}
-      </a>
     </div>
+    </section>
   );
 }
 

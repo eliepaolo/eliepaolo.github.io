@@ -8,10 +8,22 @@ function Home() {
   return (
     <>
       <Hero />
-      <section className="fade">
-        <h2>{t('home.welcome')}</h2>
-        <div className="divider"></div>
+      <section className="section-light">
+        <div className="fade">
+        
+        <div className="home-quote">
+          <p className="quote-text">
+            <span
+              dangerouslySetInnerHTML={{ __html: t('home.quote') }}
+            />
+          </p>
+          <p className="quote-author">
+            — {t('home.quoteAuthor')}
+          </p>
+        </div>
+        </div>
       </section>
+
     </>
   );
 }

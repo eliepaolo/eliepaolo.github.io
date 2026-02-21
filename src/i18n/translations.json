@@ -2,11 +2,12 @@
   "it": {
     "translation": {
       "home": {
-        "welcome": "Grazie per condividere con noi questo giorno speciale!"
+        "quote": "La <strong>Casa</strong> è un luogo decisivo nella vita, dove la <strong>Vita</strong> cresce e si può realizzare, perché è un luogo in cui ogni persona impara a <strong>ricevere Amore</strong> e a <strong>donare Amore</strong>. Questa è la <strong>Casa</strong>.",
+        "quoteAuthor": "Papa Francesco"
       },
       "cerimonia": {
         "title": "Cerimonia",
-        "description": "La cerimonia si terrà alle $t(config:ceremonyTime) presso $t(config:ceremonyPlace), $t(config:location).",
+        "description": "La cerimonia si terrà alle $t(config:ceremonyTime) presso la $t(config:ceremonyPlace), $t(config:location).",
         "address": "$t(config:ceremonyAddress)",
         "mappa": "Portami qui ->",
         "link": "$t(config:ceremonyLink)"
@@ -18,31 +19,86 @@
         "mappa": "Portami qui ->",
         "link": "$t(config:receptionLink)"
       },
-      "pernottamento": {
-        "title": "Pernottamento",
-        "description": "Coming Soon… Stiamo preparando tutte le informazioni sugli hotel."
+      "soggiorno": {
+        "title": "Soggiorno",
+        "description": "Se desideri fermarti qualche giorno in più, abbiamo raccolto alcuni luoghi che amiamo da visitare in Umbria.",
+        "intro": "Borghi medievali, natura incontaminata, panorami mozzafiato e ottimo vino: l’Umbria è perfetta per un piccolo viaggio prima o dopo il matrimonio.",
+        "suggestionTitle": "Luoghi consigliati",
+        "note": "<strong>Nota:</strong> consigliamo di muoversi in macchina, poiché i vari luoghi non sono facilmente collegati tra loro con i mezzi pubblici. Non esitare a contattarci se hai bisogno di trovare qualcuno che possa darti un passaggio."
       },
       "canti": {
-        "title": "Canti",
-        "description": "Coming Soon… Presto condivideremo i brani e le musiche."
+        "title": "Canti & Libretto",
+        "description": "Qui troverai presto i canti che accompagneranno la celebrazione e il libretto completo della messa.",
+        "note": "Potrai consultarlo online o scaricarlo prima del matrimonio.",
+        "download": "Scarica il libretto"
       },
       "listaNozze": {
         "title": "Lista Nozze",
-        "description": "Il vostro affetto è il regalo più grande, ma se desiderate contribuire al nostro viaggio:",
-        "iban": "$t(config:iban)"
+        "description": "La tua presenza è il regalo più grande, ma, se desideri farci un regalo puoi contribuire al nostro viaggio di nozze in Islanda e alla nostra futura vita insieme qui. Grazie in anticipo!",
+        "beneficiaryLabel": "Beneficiario:",
+        "beneficiary": "Paolo Sani",
+        "ibanLabel": "IBAN:",
+        "iban": "IT12 P030 3212 8040 1000 0010 477",
+        "bicLabel": "BIC:",
+        "bic": "BACRIT21041",
+        "reasonLabel": "Causale:",
+        "reason": "Regalo Nozze da TUO NOME"
       },
       "rsvp": {
         "title": "RSVP",
-        "description": "Conferma la tua presenza compilando il form qui sotto:",
+        "description": "Facci sapere se potrai essere dei nostri oppure no compilando il form qui sotto, entro e non oltre il <strong>1 giugno 2026</strong>.",
         "button": "Conferma presenza",
         "link": "$t(config:formLink)"
+      },
+      "map": {
+        "showWeddingOnly": "Mostra solo luoghi del matrimonio",
+        "showAll": "Mostra tutti i luoghi consigliati",
+        "ceremonyPlace": "Luogo della Cerimonia",
+        "receptionPlace": "Luogo del Ricevimento",
+        "places": {
+          "perugia": "Perugia",
+          "assisi": "Assisi + Santa Maria degli Angeli",
+          "spello": "Spello",
+          "castiglione": "Castiglione del Lago",
+          "montefalcoBevagna": "Montefalco e Bevagna",
+          "marmore": "Cascate delle Marmore",
+          "clitunno": "Le Fonti del Clitunno",
+          "spoleto": "Spoleto",
+          "gubbio": "Gubbio",
+          "ceremony": "Cerimonia",
+          "reception": "Ricevimento"
+        },
+        "descriptions": {
+          "perugia": "Il cuore storico dell’Umbria, tra vicoli medievali e panorami mozzafiato.",
+          "assisi": "La città di San Francesco, spirituale e suggestiva.",
+          "spello": "Uno dei borghi più belli d’Italia.",
+          "castiglione": "Affacciato sul Lago Trasimeno.",
+          "montefalcoBevagna": "Terra del Sagrantino, perfetta per gli amanti del vino.",
+          "marmore": "Tra le cascate più alte d’Europa.",
+          "clitunno": "Un angolo romantico immerso nella natura.",
+          "spoleto": "Arte, cultura e il celebre Ponte delle Torri.",
+          "gubbio": "Città medievale perfettamente conservata."
+        },
+        "infoLinks": {
+          "perugia": "https://www.10cose.it/perugia/cosa-vedere-perugia",
+          "assisi": "https://www.10cose.it/assisi/cosa-vedere-assisi",
+          "spello": "https://www.10cose.it/spello/cosa-vedere-borgo-spello",
+          "spoleto": "https://www.10cose.it/spoleto/cosa-vedere-spoleto",
+          "montefalcoBevagna": "https://www.10cose.it/montefalco/cosa-vedere-borgo-montefalco-umbria",
+          "castiglione": "https://souvenirdiviaggio.it/cosa-vedere-sul-lago-trasimeno-borghi-e-isole/",
+          "marmore": "https://cascatadellemarmore.info/home/",
+          "clitunno": "https://www.fontidelclitunno.it/",
+          "gubbio": "https://www.10cose.it/gubbio/cosa-vedere-gubbio"
+        },
+        "openAllOnMaps": "Apri tutti i posti su Mappe",
+        "openHint": "Si aprirà direttamente nella tua app Mappe"
       },
       "menu": {
         "home": "Home",
         "informazioni": "Informazioni",
         "cerimonia": "Cerimonia",
         "ricevimento": "Ricevimento",
-        "pernottamento": "Pernottamento",
+        "soggiorno": "Soggiorno",
         "canti": "Canti",
         "listaNozze": "Lista Nozze",
         "rsvp": "RSVP",
@@ -51,7 +107,8 @@
       "countdown": {
         "days": "giorni",
         "hours": "ore",
-        "minutes": "minuti"
+        "minutes": "minuti",
+        "seconds": "secondi"
       },
       "hero": {
         "title": "$t(config:names)",
@@ -62,7 +119,8 @@
   "en": {
     "translation": {
       "home": {
-        "welcome": "Thank you for sharing this special day with us!"
+        "quote": "A <strong>Home</strong> is a decisive place in life, where <strong>Life</strong> grows and can flourish, because it is a place where each person learns to <strong>receive Love</strong> and to <strong>give Love</strong>. This is <strong>Home</strong>.",
+        "quoteAuthor": "Pope Francis"
       },
       "cerimonia": {
         "title": "Ceremony",
@@ -78,31 +136,86 @@
         "mappa": "Take me there ->",
         "link": "$t(config:receptionLink)"
       },
-      "pernottamento": {
-        "title": "Accommodation",
-        "description": "Coming Soon… We are preparing hotel info nearby."
+      "soggiorno": {
+        "title": "Stay",
+        "description": "If you would like to stay a few extra days, we have gathered some beautiful places we love in Umbria.",
+        "intro": "Medieval towns, unspoiled nature, breathtaking views and great wine: Umbria is perfect for a short trip before or after the wedding.",
+        "suggestionTitle": "Recommended Places",
+        "note": "<strong>Note:</strong> we recommend getting around by car, as the different places are not easily connected by public transport. Please don’t hesitate to contact us if you need help finding someone who can give you a ride."
       },
       "canti": {
-        "title": "Songs",
-        "description": "Coming Soon… We will share the songs for the ceremony and reception."
+        "title": "Songs & Ceremony Booklet",
+        "description": "Here you will soon find the songs that will accompany the celebration and the full ceremony booklet.",
+        "note": "You will be able to read it online or download it before the wedding.",
+        "download": "Download the booklet"
       },
       "listaNozze": {
         "title": "Gift List",
-        "description": "Your affection is the greatest gift, but if you want to contribute to our trip:",
-        "iban": "$t(config:iban)"
+        "description": "Your presence is the greatest gift, but if you would like to give us something, you can contribute to our honeymoon in Iceland and to our future life together. Thank you so much in advance!",
+        "beneficiaryLabel": "Beneficiary:",
+        "beneficiary": "Paolo Sani",
+        "ibanLabel": "IBAN:",
+        "iban": "IT12 P030 3212 8040 1000 0010 477",
+        "bicLabel": "BIC:",
+        "bic": "BACRIT21041",
+        "reasonLabel": "Reference:",
+        "reason": "Wedding gift from YOUR NAME"
       },
       "rsvp": {
         "title": "RSVP",
-        "description": "Confirm your attendance by filling the form below:",
+        "description": "Please let us know whether you will be able to join us or not by filling out the form below no later than <strong>June 1, 2026</strong>.",
         "button": "Confirm Attendance",
         "link": "$t(config:formLink)"
+      },
+      "map": {
+        "showWeddingOnly": "Show only wedding locations",
+        "showAll": "Show all recommended places",
+        "ceremonyPlace": "Ceremony Location",
+        "receptionPlace": "Reception Location",
+        "places": {
+          "perugia": "Perugia",
+          "assisi": "Assisi + Santa Maria degli Angeli",
+          "spello": "Spello",
+          "castiglione": "Castiglione del Lago",
+          "montefalcoBevagna": "Montefalco & Bevagna",
+          "marmore": "Marmore Falls",
+          "clitunno": "Clitunno Springs",
+          "spoleto": "Spoleto",
+          "gubbio": "Gubbio",
+          "ceremony": "Ceremony",
+          "reception": "Reception"
+        },
+        "descriptions": {
+          "perugia": "The historic heart of Umbria, full of medieval streets and beautiful views.",
+          "assisi": "The town of Saint Francis — peaceful and unforgettable.",
+          "spello": "One of Italy’s most charming villages.",
+          "castiglione": "A lovely town overlooking Lake Trasimeno.",
+          "montefalcoBevagna": "Sagrantino wine country — perfect for wine lovers.",
+          "marmore": "Among the highest waterfalls in Europe.",
+          "clitunno": "A romantic natural spot surrounded by greenery.",
+          "spoleto": "Art, culture, and the famous Bridge of Towers.",
+          "gubbio": "A perfectly preserved medieval town."
+        },
+        "infoLinks": {
+          "perugia": "https://www.10cose.it/perugia/cosa-vedere-perugia",
+          "assisi": "https://www.10cose.it/assisi/cosa-vedere-assisi",
+          "spello": "https://www.10cose.it/spello/cosa-vedere-borgo-spello",
+          "spoleto": "https://www.10cose.it/spoleto/cosa-vedere-spoleto",
+          "montefalcoBevagna": "https://www.10cose.it/montefalco/cosa-vedere-borgo-montefalco-umbria",
+          "castiglione": "https://souvenirdiviaggio.it/cosa-vedere-sul-lago-trasimeno-borghi-e-isole/",
+          "marmore": "https://cascatadellemarmore.info/home/",
+          "clitunno": "https://www.fontidelclitunno.it/",
+          "gubbio": "https://www.10cose.it/gubbio/cosa-vedere-gubbio"
+        },
+        "openAllOnMaps": "Open all places on Maps",
+        "openHint": "It will open directly in your Maps app"
       },
       "menu": {
         "home": "Home",
         "informazioni": "Information",
         "cerimonia": "Ceremony",
         "ricevimento": "Reception",
-        "pernottamento": "Accommodation",
+        "soggiorno": "Accommodation",
         "canti": "Songs",
         "listaNozze": "Gift List",
         "rsvp": "RSVP",
@@ -111,7 +224,8 @@
       "countdown": {
         "days": "days",
         "hours": "hours",
-        "minutes": "minutes"
+        "minutes": "minutes",
+        "seconds": "seconds"
       },
       "hero": {
         "title": "$t(config:names)",
@@ -122,7 +236,8 @@
   "de": {
     "translation": {
       "home": {
-        "welcome": "Danke, dass Sie diesen besonderen Tag mit uns teilen!"
+        "quote": "Ein <strong>Zuhause</strong> ist ein entscheidender Ort im Leben, wo das <strong>Leben</strong> wächst und sich entfalten kann, weil es ein Ort ist, an dem jeder Mensch lernt, <strong>Liebe zu empfangen</strong> und <strong>Liebe zu schenken</strong>. Das ist ein <strong>Zuhause</strong>.",
+        "quoteAuthor": "Papst Franziskus"
       },
       "cerimonia": {
         "title": "Zeremonie",
@@ -138,31 +253,86 @@
         "mappa": "Bring mich hin ->",
         "link": "$t(config:receptionLink)"
       },
-      "pernottamento": {
-        "title": "Unterkunft",
-        "description": "Coming Soon… Wir bereiten Hotelinformationen in der Nähe vor."
+      "soggiorno": {
+        "title": "Aufenthalt",
+        "description": "Wenn du ein paar Tage länger bleiben möchtest, haben wir einige wunderschöne Orte, die wir lieben, in Umbrien für dich gesammelt.",
+        "intro": "Mittelalterliche Städte, unberührte Natur, atemberaubende Ausblicke und hervorragender Wein: Umbrien eignet sich perfekt für eine kleine Reise vor oder nach der Hochzeit.",
+        "suggestionTitle": "Empfohlene Orte",
+        "note": "<strong>Hinweis:</strong> wir empfehlen, mit dem Auto unterwegs zu sein, da die verschiedenen Orte mit öffentlichen Verkehrsmitteln nicht gut miteinander verbunden sind. Melde dich gerne bei uns, wenn du jemanden brauchst, der dich mitnehmen kann."
       },
       "canti": {
-        "title": "Lieder",
-        "description": "Coming Soon… Bald teilen wir die Lieder für Zeremonie und Empfang."
+        "title": "Lieder & Messheft",
+        "description": "Hier findest du bald die Lieder, die die Feier begleiten, sowie das vollständige Messheft.",
+        "note": "Du kannst es online ansehen oder vor der Hochzeit herunterladen.",
+        "download": "Messheft herunterladen"
       },
       "listaNozze": {
         "title": "Geschenkliste",
-        "description": "Ihre Zuneigung ist das größte Geschenk, aber wenn Sie zu unserer Reise beitragen möchten:",
-        "iban": "$t(config:iban)"
+        "description": "Deine Anwesenheit ist das größte Geschenk, aber wenn du uns etwas schenken möchtest, kannst du zu unserer Hochzeitsreise nach Island und zu unserem gemeinsamen Leben beitragen. Danke dir von Herzen!",
+        "beneficiaryLabel": "Begünstigter:",
+        "beneficiary": "Paolo Sani",
+        "ibanLabel": "IBAN:",
+        "iban": "IT12 P030 3212 8040 1000 0010 477",
+        "bicLabel": "BIC:",
+        "bic": "BACRIT21041",
+        "reasonLabel": "Verwendungszweck:",
+        "reason": "Hochzeitsgeschenk von DEIN NAME"
       },
       "rsvp": {
         "title": "RSVP",
-        "description": "Bestätigen Sie Ihre Teilnahme, indem Sie das Formular unten ausfüllen:",
+        "description": "Bitte lass uns bis spätestens <strong>1. Juni 2026</strong> wissen, ob du dabei sein kannst oder nicht, indem du das untenstehende Formular ausfüllst.",
         "button": "Teilnahme bestätigen",
         "link": "$t(config:formLink)"
+      },
+      "map": {
+        "showWeddingOnly": "Nur Hochzeitsorte anzeigen",
+        "showAll": "Alle empfohlenen Orte anzeigen",
+        "ceremonyPlace": "Ort der Zeremonie",
+        "receptionPlace": "Ort des Empfangs",
+        "places": {
+          "perugia": "Perugia",
+          "assisi": "Assisi + Santa Maria degli Angeli",
+          "spello": "Spello",
+          "castiglione": "Castiglione del Lago",
+          "montefalcoBevagna": "Montefalco & Bevagna",
+          "marmore": "Marmore-Wasserfälle",
+          "clitunno": "Clitunno-Quellen",
+          "spoleto": "Spoleto",
+          "gubbio": "Gubbio",
+          "ceremony": "Zeremonie",
+          "reception": "Empfang"
+        },
+        "descriptions": {
+          "perugia": "Das historische Herz Umbriens – mit mittelalterlichen Gassen und tollen Ausblicken.",
+          "assisi": "Die Stadt des heiligen Franziskus – ruhig und beeindruckend.",
+          "spello": "Eines der schönsten Dörfer Italiens.",
+          "castiglione": "Ein schöner Ort mit Blick auf den Trasimenischen See.",
+          "montefalcoBevagna": "Sagrantino-Weingebiet – perfekt für Weinliebhaber.",
+          "marmore": "Zu den höchsten Wasserfällen Europas.",
+          "clitunno": "Ein romantischer Naturort, umgeben von viel Grün.",
+          "spoleto": "Kunst, Kultur und die berühmte Ponte delle Torri.",
+          "gubbio": "Eine hervorragend erhaltene mittelalterliche Stadt."
+        },
+        "infoLinks": {
+          "perugia": "https://www.10cose.it/perugia/cosa-vedere-perugia",
+          "assisi": "https://www.10cose.it/assisi/cosa-vedere-assisi",
+          "spello": "https://www.10cose.it/spello/cosa-vedere-borgo-spello",
+          "spoleto": "https://www.10cose.it/spoleto/cosa-vedere-spoleto",
+          "montefalcoBevagna": "https://www.10cose.it/montefalco/cosa-vedere-borgo-montefalco-umbria",
+          "castiglione": "https://souvenirdiviaggio.it/cosa-vedere-sul-lago-trasimeno-borghi-e-isole/",
+          "marmore": "https://cascatadellemarmore.info/home/",
+          "clitunno": "https://www.fontidelclitunno.it/",
+          "gubbio": "https://www.10cose.it/gubbio/cosa-vedere-gubbio"
+        },
+        "openAllOnMaps": "Alle Orte in Maps öffnen",
+        "openHint": "Wird direkt in deiner Karten-App geöffnet"
       },
       "menu": {
         "home": "Startseite",
         "informazioni": "Informationen",
         "cerimonia": "Zeremonie",
         "ricevimento": "Empfang",
-        "pernottamento": "Unterkunft",
+        "soggiorno": "Aufenthalt",
         "canti": "Lieder",
         "listaNozze": "Geschenkliste",
         "rsvp": "RSVP",
@@ -171,7 +341,9 @@
       "countdown": {
         "days": "Tage",
         "hours": "Stunden",
-        "minutes": "Minuten"
+        "minutes": "Minuten",
+        "seconds": "Secunden"
+
       },
       "hero": {
         "title": "$t(config:names)",

@@ -5,18 +5,22 @@ function RSVP() {
   const { t } = useTranslation();
 
   return (
-    <section className="fade">
+    <section className="section-light">
+      <div className="fade">
       <h2>{t('rsvp.title')}</h2>
       <div className="divider"></div>
-      <p>{t('rsvp.description')}</p>
+      <span
+              dangerouslySetInnerHTML={{ __html: t('rsvp.description') }}
+      />
       <a
-        className="button"
+        className="maps-btn"
         href={t('rsvp.link')}
         target="_blank"
         rel="noreferrer"
       >
         {t('rsvp.button')}
       </a>
+      </div>
     </section>
   );
 }

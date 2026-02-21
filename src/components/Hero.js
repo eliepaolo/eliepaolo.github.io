@@ -1,6 +1,7 @@
 import React from 'react';
 import Countdown from './Countdown';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 function Hero() {
   const { t } = useTranslation();
@@ -11,7 +12,13 @@ function Hero() {
         <h1>{t('hero.title')}</h1>
         <div className="divider"></div>
         <p className="date">{t('hero.date')}</p>
-        <Countdown />
+        <div className="hero-countdown">
+          <Countdown />
+        </div>
+
+        <Link to="/rsvp" className="hero-cta">
+          {t('rsvp.button')}
+        </Link>
       </div>
     </section>
   );
