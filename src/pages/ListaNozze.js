@@ -17,11 +17,25 @@ function ListaNozze() {
       <div className="fade">
         <h2>{t('listaNozze.title')}</h2>
         <div className="divider"></div>
-        <p>{t('listaNozze.description')}</p>
+
+        <div className="lista-images-row">
+          <div className="cerimonia-image">
+            <img src="/images/sposi_casa.png" alt="Sposi nella casa" />
+          </div>
+          <div className="cerimonia-image">
+            <img src="/images/lista_nozze.png" alt="Lista Nozze" />
+          </div>
+        </div>
+
+        <div className="lista-description-centered">
+          <p dangerouslySetInnerHTML={{ __html: t('listaNozze.description') }}></p>
+        </div>
+
         <div className="gift-box">
           <div className="gift-details">
             <p className="copy-row">
-              <strong>{t('listaNozze.beneficiaryLabel')}</strong> {t('listaNozze.beneficiary')}
+              <strong>{t('listaNozze.beneficiaryLabel')}</strong>
+              <span className="copy-value">{t('listaNozze.beneficiary')}</span>
               <button
                 className="copy-btn"
                 onClick={() => handleCopy(t('listaNozze.beneficiary'), 'beneficiary')}
@@ -47,8 +61,10 @@ function ListaNozze() {
                 )}
               </button>
             </p>
+
             <p className="copy-row">
-              <strong>{t('listaNozze.ibanLabel')}</strong> {t('listaNozze.iban')}
+              <strong>{t('listaNozze.ibanLabel')}</strong>
+              <span className="copy-value iban-value">{t('listaNozze.iban')}</span>
               <button
                 className="copy-btn"
                 onClick={() => handleCopy(t('listaNozze.iban'), 'iban')}
@@ -74,8 +90,10 @@ function ListaNozze() {
                 )}
               </button>
             </p>
+
             <p className="copy-row">
-              <strong>{t('listaNozze.bicLabel')}</strong> {t('listaNozze.bic')}
+              <strong>{t('listaNozze.bicLabel')}</strong>
+              <span className="copy-value">{t('listaNozze.bic')}</span>
               <button
                 className="copy-btn"
                 onClick={() => handleCopy(t('listaNozze.bic'), 'bic')}
@@ -101,8 +119,10 @@ function ListaNozze() {
                 )}
               </button>
             </p>
+
             <p className="copy-row">
-              <strong>{t('listaNozze.reasonLabel')}</strong> {t('listaNozze.reason')}
+              <strong>{t('listaNozze.reasonLabel')}</strong>
+              <span className="copy-value">{t('listaNozze.reason')}</span>
               <button
                 className="copy-btn"
                 onClick={() => handleCopy(t('listaNozze.reason'), 'reason')}

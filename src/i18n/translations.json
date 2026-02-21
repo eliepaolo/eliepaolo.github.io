@@ -7,14 +7,14 @@
       },
       "cerimonia": {
         "title": "Cerimonia",
-        "description": "La cerimonia si terrà alle $t(config:ceremonyTime) presso la $t(config:ceremonyPlace), $t(config:location).",
+        "description": "La cerimonia si terrà alle $t(config:ceremonyTime) presso la $t(config:ceremonyPlace).<br/> Vicino alla chiesa è disponibile un ampio parcheggio gratuito.",
         "address": "$t(config:ceremonyAddress)",
         "mappa": "Portami qui ->",
         "link": "$t(config:ceremonyLink)"
       },
       "ricevimento": {
         "title": "Ricevimento",
-        "description": "Il ricevimento avrà inizio alle $t(config:receptionTime) presso $t(config:receptionPlace), $t(config:location).",
+        "description": "Il ricevimento avrà inizio alle $t(config:receptionTime) presso $t(config:receptionPlace).<br/> Una volta arrivati alla location indicata su Maps, sarà necessario superare il cancello e proseguire in auto per ancora un paio di centinaia di metri: lì troverete il parcheggio.",
         "address": "$t(config:receptionAddress)",
         "mappa": "Portami qui ->",
         "link": "$t(config:receptionLink)"
@@ -34,11 +34,11 @@
       },
       "listaNozze": {
         "title": "Lista Nozze",
-        "description": "La tua presenza è il regalo più grande, ma, se desideri farci un regalo puoi contribuire al nostro viaggio di nozze in Islanda e alla nostra futura vita insieme qui. Grazie in anticipo!",
+        "description": "La tua presenza è il regalo più grande, ma, se desideri farci un regalo puoi contribuire al nostro viaggio di nozze in Islanda e alla nostra futura vita insieme qui.<br/> Grazie in anticipo!",
         "beneficiaryLabel": "Beneficiario:",
         "beneficiary": "Paolo Sani",
         "ibanLabel": "IBAN:",
-        "iban": "IT12 P030 3212 8040 1000 0010 477",
+        "iban": "IT12P0303212804010000010477",
         "bicLabel": "BIC:",
         "bic": "BACRIT21041",
         "reasonLabel": "Causale:",
@@ -124,14 +124,14 @@
       },
       "cerimonia": {
         "title": "Ceremony",
-        "description": "The ceremony will be at $t(config:ceremonyTime) at $t(config:ceremonyPlace), $t(config:location).",
+        "description": "The ceremony will be at $t(config:ceremonyTime) at $t(config:ceremonyPlace).<br/> There is a large free parking area available near the church.",
         "address": "$t(config:ceremonyAddress)",
         "mappa": "Take me there ->",
         "link": "$t(config:ceremonyLink)"
       },
       "ricevimento": {
         "title": "Reception",
-        "description": "The reception starts at $t(config:receptionTime) at $t(config:receptionPlace), $t(config:location).",
+        "description": "The reception starts at $t(config:receptionTime) at $t(config:receptionPlace).<br/> Once you arrive at the location indicated on Maps, please go through the gate and continue driving for a couple of hundred meters: you will find the parking area there.",
         "address": "$t(config:receptionAddress)",
         "mappa": "Take me there ->",
         "link": "$t(config:receptionLink)"
@@ -151,11 +151,11 @@
       },
       "listaNozze": {
         "title": "Gift List",
-        "description": "Your presence is the greatest gift, but if you would like to give us something, you can contribute to our honeymoon in Iceland and to our future life together. Thank you so much in advance!",
+        "description": "Your presence is the greatest gift, but if you would like to give us something, you can contribute to our honeymoon in Iceland and to our future life together.<br/> Thank you so much in advance!",
         "beneficiaryLabel": "Beneficiary:",
         "beneficiary": "Paolo Sani",
         "ibanLabel": "IBAN:",
-        "iban": "IT12 P030 3212 8040 1000 0010 477",
+        "iban": "IT12P0303212804010000010477",
         "bicLabel": "BIC:",
         "bic": "BACRIT21041",
         "reasonLabel": "Reference:",
@@ -241,14 +241,14 @@
       },
       "cerimonia": {
         "title": "Zeremonie",
-        "description": "Die Zeremonie findet um $t(config:ceremonyTime) Uhr bei $t(config:ceremonyPlace), $t(config:location) statt.",
+        "description": "Die Zeremonie findet um $t(config:ceremonyTime) Uhr bei $t(config:ceremonyPlace) statt.<br/> In der Nähe der Kirche gibt es einen großen kostenlosen Parkplatz.",
         "address": "$t(config:ceremonyAddress)",
         "mappa": "Bring mich hin ->",
         "link": "$t(config:ceremonyLink)"
       },
       "ricevimento": {
         "title": "Empfang",
-        "description": "Der Empfang beginnt um $t(config:receptionTime) Uhr bei $t(config:receptionPlace), $t(config:location).",
+        "description": "Der Empfang beginnt um $t(config:receptionTime) Uhr bei $t(config:receptionPlace).<br/> Sobald du bei der auf Maps angezeigten Adresse angekommen bist, fahre bitte durch das Tor und noch ein paar hundert Meter weiter: Dort befindet sich der Parkplatz.",
         "address": "$t(config:receptionAddress)",
         "mappa": "Bring mich hin ->",
         "link": "$t(config:receptionLink)"
@@ -268,11 +268,11 @@
       },
       "listaNozze": {
         "title": "Geschenkliste",
-        "description": "Deine Anwesenheit ist das größte Geschenk, aber wenn du uns etwas schenken möchtest, kannst du zu unserer Hochzeitsreise nach Island und zu unserem gemeinsamen Leben beitragen. Danke dir von Herzen!",
+        "description": "Deine Anwesenheit ist das größte Geschenk, aber wenn du uns etwas schenken möchtest, kannst du zu unserer Hochzeitsreise nach Island und zu unserem gemeinsamen Leben beitragen.<br/> Danke dir von Herzen!",
         "beneficiaryLabel": "Begünstigter:",
         "beneficiary": "Paolo Sani",
         "ibanLabel": "IBAN:",
-        "iban": "IT12 P030 3212 8040 1000 0010 477",
+        "iban": "IT12P0303212804010000010477",
         "bicLabel": "BIC:",
         "bic": "BACRIT21041",
         "reasonLabel": "Verwendungszweck:",

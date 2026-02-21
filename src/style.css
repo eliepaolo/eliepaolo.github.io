@@ -307,15 +307,25 @@ h3 {
 
 /* ================== */
 /* Sections */
-.fade {
-  max-width: 900px;
-  margin: 3rem auto;
-  padding: 0 2rem;
-  animation: fadeIn 1s ease;
-}
+  .fade {
+    max-width: 1150px;
+    margin: 1.2rem auto;
+    padding: 0 2rem;
+    animation: fadeIn 1s ease;
+  }
+
+  /* Remove extra top margin if it's the first content block */
+  .fade:first-child {
+    margin-top: 0;
+  }
 
 section {
-  padding: 6rem 0;
+  padding: 3rem 0;
+}
+
+/* Remove extra space on first section below header */
+section:first-of-type {
+  padding-top: 1.5rem;
 }
 
 /* Section background variants for layout consistency */
@@ -573,9 +583,115 @@ footer.site-footer {
 
 
 .map-container {
-  margin: 2rem 0;
+  max-width: 1100px;
+  margin: 4rem auto 0 auto;
   overflow: hidden;
-  border-radius: 22px;
+  border-radius: 28px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+}
+
+.map-container iframe {
+  height: 320px;
+}
+
+/* ================== */
+/* Cerimonia – Editorial Layout */
+.cerimonia-layout {
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  align-items: start;
+  gap: 4rem;
+  max-width: 1150px;
+  margin: 0 auto 3rem auto;
+}
+
+.cerimonia-image img {
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.08);
+  object-fit: cover;
+}
+
+.cerimonia-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.cerimonia-content h2 {
+  text-align: left;
+}
+
+.cerimonia-content .divider {
+  margin: 1.2rem 0 2rem 0;
+}
+
+.cerimonia-content p {
+  margin-bottom: 1.8rem;
+}
+
+/* Make map slightly softer inside layout */
+.cerimonia-content .map-container {
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .cerimonia-layout {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .cerimonia-content h2 {
+    text-align: center;
+  }
+
+  .cerimonia-content .divider {
+    margin: 1.4rem auto;
+  }
+}
+
+/* ================== */
+/* Lista Nozze – Images + Centered Description */
+.lista-images-row {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1150px;
+  margin: 0 auto 2.5rem auto;
+}
+
+.lista-images-row .cerimonia-image {
+  flex: 1;
+}
+
+.lista-images-row img {
+  width: 100%;
+  border-radius: 28px;
+  box-shadow: 0 30px 70px rgba(0,0,0,0.08);
+}
+
+.lista-description-centered {
+  max-width: 720px;
+  margin: 0 auto 3rem auto;
+  text-align: center;
+}
+
+.lista-description-centered p {
+  font-size: 1.05rem;
+  line-height: 1.9;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .lista-images-row {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .lista-description-centered {
+    padding: 0 1.5rem;
+  }
 }
 
 .home-quote {
@@ -766,17 +882,45 @@ footer.site-footer {
 }
 
 .gift-box {
-  background: #faf7f0;
-  padding: 2.5rem;
-  border-radius: 24px;
-  box-shadow: 0 20px 60px rgba(0,0,0,0.06);
-  margin-top: 2rem;
+  background: #ffffff;
+  padding: 2rem 2.2rem;          /* ↓ meno spazio interno */
+  border-radius: 20px;           /* ↓ meno “gonfia” */
+  box-shadow: 0 15px 35px rgba(0,0,0,0.035);  /* ↓ più leggera */
+  margin: 2.5rem auto 0 auto;    /* ↓ meno distanza sopra */
+  max-width: 1000px;             /* ↓ leggermente più stretta */
+  width: 100%;
+  border: 1px solid rgba(0,0,0,0.03);
+  grid-column: 1 / -1;
+}
+
+.gift-box .copy-row {
+  display: grid;
+  grid-template-columns: 160px 1fr auto;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.2rem 0;
+}
+
+
+.gift-box strong {
+  font-weight: 500;
+  letter-spacing: 0.6px;
+  font-size: 0.95rem;
+  color: rgba(0,0,0,0.75);
+}
+
+.gift-box .copy-value {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+}
+
+.gift-box .iban-value {
+  font-family: 'Inter', monospace;
+  letter-spacing: 1px;
 }
 
 .copy-row {
-  display: flex;
-  align-items: center;
-  gap: 0.6rem;
   position: relative;
 }
 
@@ -856,6 +1000,34 @@ footer.site-footer {
   height: 18px;
   background-color: var(--accent-blue);
   mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='white' stroke-width='1.5'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' d='M3 13l1.5-4.5A2 2 0 016.4 7h11.2a2 2 0 011.9 1.5L21 13M5 13h14M7 17a1 1 0 100 2 1 1 0 000-2zm10 0a1 1 0 100 2 1 1 0 000-2z'/%3E%3C/svg%3E") no-repeat center / contain;
+}
+
+/* ================== */
+/* Info Highlight – Ricevimento */
+.info-highlight {
+  margin: 1rem 0 1.8rem 0;
+  padding: 1.2rem 1.4rem 1.2rem 3.2rem;
+  background: #faf7f0;
+  border-left: 2px solid var(--accent-blue);
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+  position: relative;
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+.info-highlight .info-icon {
+  position: absolute;
+  left: 1.2rem;
+  top: 1.4rem;
+  color: var(--accent-blue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-highlight p {
+  margin: 0;
 }
 
 /* ================== */
