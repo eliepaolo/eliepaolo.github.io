@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 
 function FloatingUI() {
   const { i18n } = useTranslation();
   const [showScroll, setShowScroll] = useState(false);
   const [openLang, setOpenLang] = useState(false);
+  const langRef = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -13,6 +14,20 @@ function FloatingUI() {
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (langRef.current && !langRef.current.contains(event.target)) {
+        setOpenLang(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
   }, []);
 
   const changeLanguage = (lng) => {
@@ -35,7 +50,7 @@ function FloatingUI() {
         </button>
       )}
 
-      <div className="floating-lang">
+      <div className="floating-lang" ref={langRef}>
         <button
           className="lang-toggle-btn"
           onClick={() => setOpenLang(!openLang)}

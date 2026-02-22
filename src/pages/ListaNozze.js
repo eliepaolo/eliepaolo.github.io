@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import ResponsiveImage from '../components/ResponsiveImage';
 
 function ListaNozze() {
   const { t } = useTranslation();
@@ -20,10 +21,20 @@ function ListaNozze() {
 
         <div className="lista-images-row">
           <div className="cerimonia-image">
-            <img src="/images/sposi_casa.png" alt="Sposi nella casa" />
+            <ResponsiveImage
+              name="sposi-casa"
+              folder="graphics"
+              alt="Sposi-casa"
+              className="cerimonia-img"
+            />
           </div>
           <div className="cerimonia-image">
-            <img src="/images/lista_nozze.png" alt="Lista Nozze" />
+            <ResponsiveImage
+              name="lista-nozze"
+              folder="graphics"
+              alt="Lista-nozze"
+              className="cerimonia-img"
+            />
           </div>
         </div>
 

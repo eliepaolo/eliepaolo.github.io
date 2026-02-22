@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import ResponsiveImage from '../components/ResponsiveImage';
 
 function Ricevimento() {
   const { t } = useTranslation(['translation', 'config']);
@@ -12,7 +13,12 @@ function Ricevimento() {
 
         <div className="cerimonia-layout">
           <div className="cerimonia-image">
-            <img src="/images/ricevimento.png" alt="Ricevimento" />
+            <ResponsiveImage
+              name="ricevimento"
+              folder="graphics"
+              alt="Ricevimento"
+              className="cerimonia-img"
+            />
           </div>
 
           <div className="cerimonia-content">

@@ -162,6 +162,13 @@ export default function UmbriaMap() {
     return "/umbria-wedding-map-it.kml";
   };
 
+  const getGoogleMapsKmlLink = () => {
+    const baseUrl = window.location.origin;
+    const kmlPath = getKmlFileByLanguage();
+    const fullKmlUrl = `${baseUrl}${kmlPath}`;
+    return `https://www.google.com/maps?q=${encodeURIComponent(fullKmlUrl)}`;
+  };
+
   return (
     <div className="map-wrapper">
       <div style={{ textAlign: "center", marginBottom: "20px" }}>
@@ -225,7 +232,7 @@ export default function UmbriaMap() {
       </MapContainer>
       <div style={{ textAlign: "center", marginTop: "30px" }}>
         <a
-          href={getKmlFileByLanguage()}
+          href={getGoogleMapsKmlLink()}
           target="_blank"
           rel="noopener noreferrer"
           className="map-all-btn"
