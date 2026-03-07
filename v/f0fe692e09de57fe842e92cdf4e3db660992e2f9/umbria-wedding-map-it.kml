@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+  <Document>
+    <name>Mappa Matrimonio – Eli e Paolo</name>
+    <open>1</open>
+    <Style id="weddingStyle">
+      <IconStyle>
+        <color>ff4c6d5b</color>
+        <scale>1.2</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/heart.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+
+    <Style id="placeStyle">
+      <IconStyle>
+        <color>ff24308f</color>
+        <scale>1.0</scale>
+        <Icon>
+          <href>http://maps.google.com/mapfiles/kml/paddle/red-circle.png</href>
+        </Icon>
+      </IconStyle>
+    </Style>
+
+    <Placemark><name>Cerimonia</name><styleUrl>#weddingStyle</styleUrl><Point><coordinates>12.31503382698966,43.058774941561005,0</coordinates></Point></Placemark>
+    <Placemark><name>Ricevimento</name><styleUrl>#weddingStyle</styleUrl><Point><coordinates>12.083587557149405,42.950142671234026,0</coordinates></Point></Placemark>
+
+
+    <!-- Borghi -->
+    <Placemark><name>Perugia</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.3908,43.1107,0</coordinates></Point></Placemark>
+    <Placemark><name>Assisi</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.6170,43.0707,0</coordinates></Point></Placemark>
+    <Placemark><name>Spello</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.6713,42.9909,0</coordinates></Point></Placemark>
+    <Placemark><name>Castiglione del Lago</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.0391,43.1286,0</coordinates></Point></Placemark>
+    <Placemark><name>Montefalco e Bevagna</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.6493,42.8934,0</coordinates></Point></Placemark>
+    <Placemark><name>Cascata delle Marmore</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.7170,42.5480,0</coordinates></Point></Placemark>
+    <Placemark><name>Fonti del Clitunno</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.7389,42.8144,0</coordinates></Point></Placemark>
+    <Placemark><name>Spoleto</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.7388,42.7345,0</coordinates></Point></Placemark>
+    <Placemark><name>Gubbio</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.5776,43.3512,0</coordinates></Point></Placemark>
+    <Placemark><name>Orvieto</name><styleUrl>#placeStyle</styleUrl><Point><coordinates>12.1110,42.7195,0</coordinates></Point></Placemark>
+
+  </Document>
+</kml>
